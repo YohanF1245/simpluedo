@@ -12,7 +12,7 @@ public class EntityObjets {
 	@AllArgsConstructor
 	@Data
 	@Entity
-	@Table(name = "employee")
+	@Table(name = "objets")
 	public class Employee {
 
 	    @Id
