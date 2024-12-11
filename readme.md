@@ -1,3 +1,8 @@
+# Api utilisation instruction
+
+## Update application properties file
+Update file in : src/main/ressources/application.properties
+```
 spring.application.name=<db-name>
 
 spring.datasource.url=jdbc:postgresql://localhost:5432/<db-url>
@@ -11,3 +16,4 @@ spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialec
 
 # Hibernate ddl auto (create, create-drop, validate, update)
 spring.jpa.hibernate.ddl-auto = update
+```
