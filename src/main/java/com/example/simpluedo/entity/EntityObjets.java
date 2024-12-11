@@ -1,4 +1,4 @@
-package entity;
+package com.example.simpluedo.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -7,16 +7,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 @Entity
-@Table(name = "salle")
-public class EntityRooms {
-
+@Table(name = "objets")
+public class EntityObjets { 
     @Id
+    private Integer id_objet;
+    private String nom_objet;
     private Integer id_salle;
-    private String nom_salle;
-
 }

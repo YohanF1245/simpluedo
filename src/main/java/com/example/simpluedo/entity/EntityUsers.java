@@ -1,4 +1,4 @@
-package entity;
+package com.example.simpluedo.entity;
 
 import java.util.UUID;
 

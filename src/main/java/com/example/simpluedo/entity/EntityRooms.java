@@ -1,4 +1,4 @@
-package entity;
+package com.example.simpluedo.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -7,19 +7,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "visiter")
-public class EntityVisiter {
+@Table(name = "salle")
+public class EntityRooms {
 
-    private LocalDateTime heure_arrivee;
-    private LocalDateTime heure_depart;
+    @Id
     private Integer id_salle;
-    private Integer id_perso;
+    private String nom_salle;
 
 }
