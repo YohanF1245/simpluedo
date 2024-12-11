@@ -4,7 +4,11 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-
+/**
+ * This class defines the data structure for the room entity
+ * @param id_salle The integer primary key that defines the row
+ * @param nom_salle a string to store the room name
+ */
 @Entity
 @Table(name = "salles")
 public class Salles {
