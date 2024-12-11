@@ -25,7 +25,12 @@ public class SallesController {
 	public List<Salles> getAllSalles(){
 		return sallesRepo.findAll();
 	}
-	
+	@GetMapping("/salles/{id}")
+	public ResponseEntity<Salles> getEmployeeById(@PathVariable int id) {
+		Salles salle = sallesRepo.findById(id)
+				.orElseThrow(() -> new RuntimeException("An error has occured"));
+		return ResponseEntity.ok(salle);
+	}
 	@PostMapping("/salles")
 	public Salles createSalles(@RequestBody Salles salle) {
 		return sallesRepo.save(salle);
